@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="../Css/CommonCss1.0.css" rel="stylesheet" />
+    <script src="../Js/jquery-1.8.2.js"></script>
+    <link href="../Js/SliderBar/Css/SliderBar2.0.css" rel="stylesheet" />
+    <script src="../Js/SliderBar/SliderBar2.0.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            //自动切换，底部按钮居中
+            $('#sliderOne').sliderBar({
+                containerWidth: 600,
+                containerHeight: 200,
+                itemWidth: 600,
+                itemHeight: 200,
+                showBtn: false,//是否显示左右切换按钮
+                loopRun: true,//循环播放
+                autoRun: true,//启用自动切换
+                autoRunTime: 2000
+            });
+
+
+            //自动切换，底部按钮居右
+            $('#sliderTwo').sliderBar({
+                containerWidth: 600,
+                containerHeight: 200,
+                itemWidth: 600,
+                itemHeight: 200,
+                showBtn: false,
+                loopRun: true,
+                autoRun: true,
+                autoRunTime: 2000,
+                markingSite: 'right'//底部标示按钮的位置
+            });
+
+            //手动切换
+            $('#sliderThree').sliderBar({
+                containerWidth: 600,
+                containerHeight: 200,
+                itemWidth: 600,
+                itemHeight: 200,
+                showBtn: true,
+                loopRun: true,
+                autoRun: false,
+                markingType: 'circle'
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <!-- 手动切换，底部隐藏-->
+    <div id="sliderThree" class="sliderBar" data-index="0">
+        <div class="sliderContainer">
+            <ul class="slider">
+                <li>
+                    <img src="../Images/1.jpg" /></li>
+                <li>
+                    <img src="../Images/2.jpg" /></li>
+                <li>
+                    <img src="../Images/3.jpg" /></li>
+                <li>
+                    <img src="../Images/4.jpg" /></li>
+                <li>
+                    <img src="../Images/5.jpg" /></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <!-- 自动切换，底部按钮居中-->
+    <div id="sliderOne" class="sliderBar" data-index="0">
+        <div class="sliderContainer">
+            <ul class="slider">
+                <li>
+                    <img src="../Images/1.jpg" /></li>
+                <li>
+                    <img src="../Images/2.jpg" /></li>
+                <li>
+                    <img src="../Images/3.jpg" /></li>
+                <li>
+                    <img src="../Images/4.jpg" /></li>
+                <li>
+                    <img src="../Images/5.jpg" /></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- 自动切换，底部按钮居右-->
+    <div id="sliderTwo" class="sliderBar" data-index="0">
+        <div class="sliderContainer">
+            <ul class="slider">
+                <li>
+                    <img src="../Images/1.jpg" /></li>
+                <li>
+                    <img src="../Images/2.jpg" /></li>
+                <li>
+                    <img src="../Images/3.jpg" /></li>
+                <li>
+                    <img src="../Images/4.jpg" /></li>
+                <li>
+                    <img src="../Images/5.jpg" /></li>
+            </ul>
+        </div>
+    </div>
+
+
+</body>
+</html>

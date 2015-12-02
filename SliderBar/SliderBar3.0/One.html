@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link href="../Js/SliderBar3.0/Css/SliderBar3.0.css" rel="stylesheet" />
+    <script src="../Js/jquery-1.8.2.js"></script>
+    <!--<script src="../Js/jquery.easing.min.js"></script>-->
+    <script src="../Js/Common2.0.js"></script>
+    <script src="../Js/SliderBar3.0/SliderBar3.0.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            //*********************3.0  添加无间隙滚动 显示 3条*****************
+            $('#sliderOne').sliderBar({
+                containerWidth: 900,
+                containerHeight: 200,
+                itemWidth: 300,
+                itemHeight: 200,
+                displayCount: 3,
+                showBtn: true,
+                loopRun: true,
+                autoRun: false,
+                autoRunTime: 2000,
+                markingType: 'circle',
+                //showType: 'vertical'  //指定上下滚动，还是左右滚动
+                showType: 'horizontal',
+                runType: 'gapless'
+            });
+
+            /*
+            * 样式重写
+            */
+            $('#sliderTwo').sliderBar({
+                width: 600,
+                height: 200,
+                containerWidth: 900,
+                containerHeight: 200,
+                itemWidth: 300,
+                itemHeight: 200,
+                displayCount: 3,
+                showBtn: true,
+                loopRun: true,
+                autoRun: false,
+                autoRunTime: 2000,
+                markingType: 'circle',
+                //showType: 'vertical'  //指定上下滚动，还是左右滚动
+                showType: 'horizontal',
+                runType: 'gapless'
+            });
+
+        });
+    </script>
+    <style type="text/css">
+        .topLeft {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 150px;
+            height: 300px;
+            background-color: black;
+            opacity: 0.4;
+            filter:alpha(opacity=50);
+        }
+
+        .topRight {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            width: 150px;
+            height: 300px;
+            background-color: black;
+            opacity: 0.4;
+            filter: alpha(opacity=50);
+        }
+
+        .sliderBar .btn .backDiv {
+            background-color: transparent;
+        }
+    </style>
+</head>
+<body style="overflow:hidden">
+
+
+    <h3>再次配置样式重写</h3>
+
+    <div id="sliderTwo" class="sliderBar" data-index="0">
+        <div class="sliderContainer">
+            <ul class="slider">
+                <li>
+                    <img src="../Images/1.jpg" />
+                </li>
+                <li>
+                    <img src="../Images/2.jpg" />
+                </li>
+                <li>
+                    <img src="../Images/3.jpg" />
+                </li>
+                <li>
+                    <img src="../Images/4.jpg" />
+                </li>
+                <!--
+                <li>
+                    <img src="../Images/5.jpg" />
+                </li>-->
+            </ul>
+        </div>
+
+        <div class="topLeft"></div>
+        <div class="topRight"></div>
+    </div>
+
+    <br />
+    <br /><br /><br /><br /><br /><br />
+
+    <h3>初始配置样式</h3>
+
+    <!--数据显示模板 2-->
+    <div id="sliderOne" class="sliderBar" data-index="0">
+        <div class="sliderContainer">
+            <ul class="slider">
+                <li>
+                    <img src="../Images/1.jpg" />
+                </li>
+                <li>
+                    <img src="../Images/2.jpg" />
+                </li>
+                <li>
+                    <img src="../Images/3.jpg" />
+                </li>
+                <li>
+                    <img src="../Images/4.jpg" />
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+</body>
+</html>

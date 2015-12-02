@@ -1,0 +1,83 @@
+﻿/*
+* 图片切换样式控制
+*
+*/
+.changeImg {
+    width: 1004px;
+    height: 285px;
+    border: 1px solid red;
+}
+
+    /*
+* 显示内容左侧
+*/
+    .changeImg img {
+        width: 100%;
+        height: 100%;
+        border: 0px;
+    }
+
+    .changeImg .changeLeft {
+        width: 817px;
+        height: 285px;
+        float: left;
+        position: relative;
+    }
+
+.changeLeft .leftItem {
+    /*float: left;*/
+    position:absolute;
+    width:100%;
+    height:100%;
+    display:none;
+}
+    /**隐藏区项样式***/
+    .changeImg .changeRight {
+        width: 175px;
+        float: right;
+    }
+
+    .changeImg .changeItem {
+        width: 175px;
+        height: 60px;
+        margin-top: 15px;
+        position: relative;
+        float: left;
+        border: 0px solid blue;
+        cursor: pointer;
+    }
+
+        .changeImg .changeItem .changeBack {
+            opacity: 0.5;
+            filter: alphs(opacity=50);
+            width: 100%;
+            height: 100%;
+        }
+
+        .changeImg .changeItem .changeBack-hot {
+            opacity: 1;
+            filter: alphs(opacity=100);
+        }
+
+
+        .changeImg .changeItem .changeUp {
+            position: absolute;
+            width: 167px;
+            height: 52px;
+            border: 4px solid #1283D3;
+            top: 0px;
+            left: 0px;
+        }
+
+        .changeImg .changeItem .arrowLeft {
+            width: 0px;
+            height: 0px;
+            font-size: 0px;
+            position: absolute;
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+            border-left: 9px solid transparent;
+            border-right: 9px solid #1283D3;
+            top: 21px;
+            left: -22px;
+        }

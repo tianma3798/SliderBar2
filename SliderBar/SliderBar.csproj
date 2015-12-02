@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{16553528-78F8-4ED8-AEB3-3E4A9B22D179}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SliderBar</RootNamespace>
+    <AssemblyName>SliderBar</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ChangeImg\ChangeImg1.0.js" />
+    <Content Include="Css\CommonCss1.0.css" />
+    <Content Include="Css\SliderBar1.0.css" />
+    <Content Include="Images\1.jpg" />
+    <Content Include="Images\2.jpg" />
+    <Content Include="Images\3.jpg" />
+    <Content Include="Images\4.jpg" />
+    <Content Include="Images\5.jpg" />
+    <Content Include="Images\6.jpg" />
+    <Content Include="JqueryDemo\contextOne.html" />
+    <Content Include="JqueryDemo\EventOne.html" />
+    <Content Include="JqueryDemo\RemoveOne.html" />
+    <Content Include="Js\Common1.0.js" />
+    <Content Include="Js\Common3.0.js" />
+    <Content Include="Js\fancybox\ajax.txt" />
+    <Content Include="Js\fancybox\css\jquery.fancybox-1.3.4.css" />
+    <Content Include="Js\fancybox\example\10_b.jpg" />
+    <Content Include="Js\fancybox\example\10_s.jpg" />
+    <Content Include="Js\fancybox\example\11_b.jpg" />
+    <Content Include="Js\fancybox\example\11_s.jpg" />
+    <Content Include="Js\fancybox\example\12_b.jpg" />
+    <Content Include="Js\fancybox\example\12_s.jpg" />
+    <Content Include="Js\fancybox\example\1_b.jpg" />
+    <Content Include="Js\fancybox\example\1_s.jpg" />
+    <Content Include="Js\fancybox\example\2_b.jpg" />
+    <Content Include="Js\fancybox\example\2_s.jpg" />
+    <Content Include="Js\fancybox\example\3_b.jpg" />
+    <Content Include="Js\fancybox\example\3_s.jpg" />
+    <Content Include="Js\fancybox\example\4_b.jpg" />
+    <Content Include="Js\fancybox\example\4_s.jpg" />
+    <Content Include="Js\fancybox\example\5_b.jpg" />
+    <Content Include="Js\fancybox\example\5_s.jpg" />
+    <Content Include="Js\fancybox\example\6_b.jpg" />
+    <Content Include="Js\fancybox\example\6_s.jpg" />
+    <Content Include="Js\fancybox\example\7_b.jpg" />
+    <Content Include="Js\fancybox\example\7_s.jpg" />
+    <Content Include="Js\fancybox\example\8_b.jpg" />
+    <Content Include="Js\fancybox\example\8_s.jpg" />
+    <Content Include="Js\fancybox\example\9_b.jpg" />
+    <Content Include="Js\fancybox\example\9_s.jpg" />
+    <Content Include="Js\fancybox\images\blank.gif" />
+    <Content Include="Js\fancybox\images\fancybox-x.png" />
+    <Content Include="Js\fancybox\images\fancybox-y.png" />
+    <Content Include="Js\fancybox\images\fancybox.png" />
+    <Content Include="Js\fancybox\images\fancy_close.png" />
+    <Content Include="Js\fancybox\images\fancy_loading.png" />
+    <Content Include="Js\fancybox\images\fancy_nav_left.png" />
+    <Content Include="Js\fancybox\images\fancy_nav_right.png" />
+    <Content Include="Js\fancybox\images\fancy_shadow_e.png" />
+    <Content Include="Js\fancybox\images\fancy_shadow_n.png" />
+    <Content Include="Js\fancybox\images\fancy_shadow_ne.png" />
+    <Content Include="Js\fancybox\images\fancy_shadow_nw.png" />
+    <Content Include="Js\fancybox\images\fancy_shadow_s.png" />
+    <Content Include="Js\fancybox\images\fancy_shadow_se.png" />
+    <Content Include="Js\fancybox\images\fancy_shadow_sw.png" />
+    <Content Include="Js\fancybox\images\fancy_shadow_w.png" />
+    <Content Include="Js\fancybox\images\fancy_title_left.png" />
+    <Content Include="Js\fancybox\images\fancy_title_main.png" />
+    <Content Include="Js\fancybox\images\fancy_title_over.png" />
+    <Content Include="Js\fancybox\images\fancy_title_right.png" />
+    <Content Include="Js\fancybox\index.html" />
+    <Content Include="Js\fancybox\js\jquery-1.4.2.min.js" />
+    <Content Include="Js\fancybox\js\jquery.easing-1.3.pack.js" />
+    <Content Include="Js\fancybox\js\jquery.fancybox-1.3.4.js" />
+    <Content Include="Js\fancybox\js\jquery.fancybox-1.3.4.pack.js" />
+    <Content Include="Js\fancybox\js\jquery.mousewheel-3.0.4.js" />
+    <Content Include="Js\jquery-1.8.2.js" />
+    <Content Include="Js\jquery-image-silder-compare\css\beforeafter-content.css" />
+    <Content Include="Js\jquery-image-silder-compare\css\beforeafter-settings.css" />
+    <Content Include="Js\jquery-image-silder-compare\css\css.css" />
+    <Content Include="Js\jquery-image-silder-compare\css\style.css" />
+    <Content Include="Js\jquery-image-silder-compare\images\anim\bolt.gif" />
+    <Content Include="Js\jquery-image-silder-compare\images\anim\flower_1_white_bg_30fps.gif" />
+    <Content Include="Js\jquery-image-silder-compare\images\background\abstract\g_09.jpg" />
+    <Content Include="Js\jquery-image-silder-compare\images\background\pattern\basic\pattern_02b.png" />
+    <Content Include="Js\jquery-image-silder-compare\images\background\pattern\basic\pattern_10.png" />
+    <Content Include="Js\jquery-image-silder-compare\images\background\pattern\basic\pattern_1b.png" />
+    <Content Include="Js\jquery-image-silder-compare\images\background\pattern\damask\royal_dark.jpg" />
+    <Content Include="Js\jquery-image-silder-compare\images\background\pattern\damask\simple_grey.png" />
+    <Content Include="Js\jquery-image-silder-compare\images\background\pattern\damask\simple_med.png" />
+    <Content Include="Js\jquery-image-silder-compare\images\background\pattern\royal_line\royal_green.jpg" />
+    <Content Include="Js\jquery-image-silder-compare\images\background\pattern\royal_line\royal_greyline.jpg" />
+    <Content Include="Js\jquery-image-silder-compare\images\background\pattern\royal_line\royal_greyline_2.jpg" />
+    <Content Include="Js\jquery-image-silder-compare\images\background\pattern\royal_line\royal_wall.jpg" />
+    <Content Include="Js\jquery-image-silder-compare\images\background\textures\w_07.jpg" />
+    <Content Include="Js\jquery-image-silder-compare\images\beforeafter\10after.jpg" />
+    <Content Include="Js\jquery-image-silder-compare\images\beforeafter\10before.jpg" />
+    <Content Include="Js\jquery-image-silder-compare\images\beforeafter\1after.jpg" />
+    <Content Include="Js\jquery-image-silder-compare\images\beforeafter\1before.jpg" />
+    <Content Include="Js\jquery-image-silder-compare\images\beforeafter\2after.jpg" />
+    <Content Include="Js\jquery-image-silder-compare\images\beforeafter\2before.jpg" />
+    <Content Include="Js\jquery-image-silder-compare\images\beforeafter\3after.jpg" />
+    <Content Include="Js\jquery-image-silder-compare\images\beforeafter\3before.jpg" />
+    <Content Include="Js\jquery-image-silder-compare\images\beforeafter\4after.jpg" />
+    <Content Include="Js\jquery-image-silder-compare\images\beforeafter\4before.jpg" />
+    <Content Include="Js\jquery-image-silder-compare\images\beforeafter\5after.jpg" />
+    <Content Include="Js\jquery-image-silder-compare\images\beforeafter\5before.jpg" />
+    <Content Include="Js\jquery-image-silder-compare\images\beforeafter\6after.jpg" />
+    <Content Include="Js\jquery-image-silder-compare\images\beforeafter\6before.jpg" />
+    <Content Include="Js\jquery-image-silder-compare\images\beforeafter\7after.jpg" />
+    <Content Include="Js\jquery-image-silder-compare\images\beforeafter\7before.jpg" />
+    <Content Include="Js\jquery-image-silder-compare\images\beforeafter\8after.jpg" />
+    <Content Include="Js\jquery-image-silder-compare\images\beforeafter\8before.jpg" />
+    <Content Include="Js\jquery-image-silder-compare\images\beforeafter\9translate_details.jpg" />
+    <Content Include="Js\jquery-image-silder-compare\images\beforeafter_2\1after.jpg" />
+    <Content Include="Js\jquery-image-silder-compare\images\beforeafter_2\1before.jpg" />
+    <Content Include="Js\jquery-image-silder-compare\images\beforeafter_2\2after.jpg" />
+    <Content Include="Js\jquery-image-silder-compare\images\beforeafter_2\2before.jpg" />
+    <Content Include="Js\jquery-image-silder-compare\images\beforeafter_2\3after.jpg" />
+    <Content Include="Js\jquery-image-silder-compare\images\beforeafter_2\3before.jpg" />
+    <Content Include="Js\jquery-image-silder-compare\images\beforeafter_2\4after.jpg" />
+    <Content Include="Js\jquery-image-silder-compare\images\beforeafter_2\4before.jpg" />
+    <Content Include="Js\jquery-image-silder-compare\images\beforeafter_3\1after.jpg" />
+    <Content Include="Js\jquery-image-silder-compare\images\beforeafter_3\1before.jpg" />
+    <Content Include="Js\jquery-image-silder-compare\images\beforeafter_3\2after.jpg" />
+    <Content Include="Js\jquery-image-silder-compare\images\beforeafter_3\2before.jpg" />
+    <Content Include="Js\jquery-image-silder-compare\images\beforeafter_3\3before.jpg" />
+    <Content Include="Js\jquery-image-silder-compare\images\beforeafter_3\f_bg.gif" />
+    <Content Include="Js\jquery-image-silder-compare\images\beforeafter_3\f_border.png" />
+    <Content Include="Js\jquery-image-silder-compare\images\beforeafter_3\f_code.png" />
+    <Content Include="Js\jquery-image-silder-compare\images\beforeafter_3\f_fish.png" />
+    <Content Include="Js\jquery-image-silder-compare\images\beforeafter_3\f_green.png" />
+    <Content Include="Js\jquery-image-silder-compare\images\beforeafter_3\f_points.png" />
+    <Content Include="Js\jquery-image-silder-compare\images\dr_logo.png" />
+    <Content Include="Js\jquery-image-silder-compare\images\icon_1.png" />
+    <Content Include="Js\jquery-image-silder-compare\images\icon_2.png" />
+    <Content Include="Js\jquery-image-silder-compare\images\loader\loader_round_black.gif" />
+    <Content Include="Js\jquery-image-silder-compare\images\loader\loader_round_blue.gif" />
+    <Content Include="Js\jquery-image-silder-compare\images\loader\timer_black.png" />
+    <Content Include="Js\jquery-image-silder-compare\images\loader\timer_white.png" />
+    <Content Include="Js\jquery-image-silder-compare\images\logo_india.png" />
+    <Content Include="Js\jquery-image-silder-compare\images\navigation\buttons.png" />
+    <Content Include="Js\jquery-image-silder-compare\images\navigation\buttons_invert.png" />
+    <Content Include="Js\jquery-image-silder-compare\images\navigation\drag_h_black.png" />
+    <Content Include="Js\jquery-image-silder-compare\images\navigation\drag_h_white.png" />
+    <Content Include="Js\jquery-image-silder-compare\images\navigation\nextprev.png" />
+    <Content Include="Js\jquery-image-silder-compare\images\navigation\nextprev_invert.png" />
+    <Content Include="Js\jquery-image-silder-compare\images\navigation\settingsanim_1.gif" />
+    <Content Include="Js\jquery-image-silder-compare\images\navigation\toolbar_separator.png" />
+    <Content Include="Js\jquery-image-silder-compare\images\navigation\toolbar_separator_2.png" />
+    <Content Include="Js\jquery-image-silder-compare\images\nr1.png" />
+    <Content Include="Js\jquery-image-silder-compare\images\sitelogo.png" />
+    <Content Include="Js\jquery-image-silder-compare\images\tatoologo.png" />
+    <Content Include="Js\jquery-image-silder-compare\images\wine.png" />
+    <Content Include="Js\jquery-image-silder-compare\images\yourlogo.png" />
+    <Content Include="Js\jquery-image-silder-compare\index.html" />
+    <Content Include="Js\jquery-image-silder-compare\index2.html" />
+    <Content Include="Js\jquery-image-silder-compare\js\freshline\animadrag.js" />
+    <Content Include="Js\jquery-image-silder-compare\js\freshline\jquery.freshline.beforeafter.js" />
+    <Content Include="Js\jquery-image-silder-compare\js\freshline\jquery.freshline.demo.js" />
+    <Content Include="Js\jquery-image-silder-compare\js\html5.js" />
+    <Content Include="Js\jquery-image-silder-compare\js\jquery.easing.1.3.js" />
+    <Content Include="Js\jquery-image-silder-compare\js\jquery.min.js" />
+    <Content Include="Js\jquery-tab-image-silder\css\style.css" />
+    <Content Include="Js\jquery-tab-image-silder\images\1.jpg" />
+    <Content Include="Js\jquery-tab-image-silder\images\2.jpg" />
+    <Content Include="Js\jquery-tab-image-silder\images\3.jpg" />
+    <Content Include="Js\jquery-tab-image-silder\images\4.jpg" />
+    <Content Include="Js\jquery-tab-image-silder\images\btns.png" />
+    <Content Include="Js\jquery-tab-image-silder\index.html" />
+    <Content Include="Js\jquery-tab-image-silder\js\jquery.min.js" />
+    <Content Include="Js\jquery.easing.min.js" />
+    <Content Include="Js\jquery.json-2.4.js" />
+    <Content Include="Js\SliderBar3.0\copy.js" />
+    <Content Include="Js\SliderBar3.0\Css\SliderBar3.0.css" />
+    <Content Include="Js\SliderBar3.0\img\arrow.png" />
+    <Content Include="Js\SliderBar3.0\SliderBar3.0.js" />
+    <Content Include="Js\SliderBar\img\arrow.png" />
+    <Content Include="Js\SliderBar\SliderBar2.0.js" />
+    <Content Include="Js\Common2.0.js" />
+    <Content Include="Page\One.html" />
+    <Content Include="Page\Timer.html" />
+    <Content Include="Page\TimerTwo.html" />
+    <Content Include="SliderBar2.0\Fourth.html" />
+    <Content Include="SliderBar2.0\One.html" />
+    <Content Include="SliderBar2.0\Three.html" />
+    <Content Include="SliderBar2.0\Two.html" />
+    <Content Include="SliderBar3.0\Fourth.html" />
+    <Content Include="SliderBar3.0\One.html" />
+    <Content Include="Js\SliderPage1.0\SliderPage.css" />
+    <Content Include="Js\SliderPage1.0\sliderPage.js" />
+    <Content Include="SliderBar3.0\singleOne.html" />
+    <Content Include="SliderBar3.0\Single_More.html" />
+    <Content Include="SliderBar3.0\Three.html" />
+    <Content Include="SliderBar3.0\Two.html" />
+    <Content Include="View\BackOne.html" />
+    <Content Include="View\ChangeOne.html" />
+    <Content Include="View\EventOne.html" />
+    <Content Include="View\other.html" />
+    <Content Include="View\SliderBar1One.html" />
+    <Content Include="View\SliderBar1Two.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Js\SliderBar\Css\SliderBar2.0.css" />
+    <Content Include="Js\SliderBar\img\arrow.psd" />
+    <Content Include="Js\fancybox\example\Thumbs.db" />
+    <Content Include="Js\jquery-image-silder-compare\fonts\lanrentuku.woff" />
+    <Content Include="Js\SliderBar3.0\img\arrow.psd" />
+    <Content Include="ChangeImg\ChangeImg1.0.css" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:9505/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

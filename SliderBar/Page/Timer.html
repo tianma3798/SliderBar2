@@ -1,0 +1,55 @@
+﻿
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+
+    <script type="text/javascript">
+
+        //定时器 说明
+        /*
+        * var timer=setTimeOut(method,number);
+        * 指定number时间之后 只执行一次method
+        *
+        * clearTimeOut(timer);
+        */
+
+
+        /*
+       * var timer= setInterval(method,number);
+       * 每隔number时间 只执行一次method
+       *
+       * clearInterval(timer);
+       */
+
+        var timerNumber = 10;
+
+        //启动定制器
+        var timerOne = setInterval(numberDown, 1000);
+
+        //每隔1秒钟 ，执行的方法
+        function numberDown() {
+            timerNumber--;
+
+            getNumber().innerText = timerNumber;
+            //如果为0 执行完毕，清楚定时器
+            if (timerNumber == 0) {
+                clearInterval(timerOne);
+
+                alert('时间到');
+            }
+        }
+        function getNumber() {
+            return document.getElementById('timerNumber');
+        }
+
+    </script>
+
+</head>
+<body>
+
+
+    <h1>倒计：<span id="timerNumber">10</span>秒</h1>
+</body>
+</html>

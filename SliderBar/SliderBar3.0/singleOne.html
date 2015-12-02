@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="../Js/SliderBar3.0/Css/SliderBar3.0.css" rel="stylesheet" />
+    <script src="../Js/jquery-1.8.2.js"></script>
+    <script src="../Js/Common2.0.js"></script>
+    <script src="../Js/SliderBar3.0/SliderBar3.0.js"></script>
+    ]
+
+    <script type="text/javascript">
+        $(function () {
+            // 禁用时间间隔
+            $('#sliderTwo').sliderBar({
+                containerWidth: 500,
+                containerHeight: 200,
+                itemWidth: 500,
+                itemHeight: 200,
+                displayCount: 1,
+                showBtn: true,
+                loopRun: true,
+                autoRun: false,
+                showTime: 0,
+                autoRunTime: 2000,
+                markingType: 'circle',
+                showType: 'vertical'  //指定显示方式
+            });
+        });
+    </script>
+</head>
+<body>
+    <!--数据显示模板 2-->
+    <div id="sliderTwo" class="sliderBar" data-index="0">
+        <div class="sliderContainer">
+            <ul class="slider">
+                <li>
+                    <img src="../Images/1.jpg" />
+                </li>
+                <li>
+                    <img src="../Images/2.jpg" />
+                </li>
+                <li>
+                    <img src="../Images/3.jpg" />
+                </li>
+                <li>
+                    <img src="../Images/4.jpg" />
+                </li>
+                <li>
+                    <img src="../Images/5.jpg" />
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <script src="../Js/jquery-1.8.2.js"></script>
+    <link href="../Css/CommonCss1.0.css" rel="stylesheet" />
+    <script src="../Js/Common3.0.js"></script>
+    <link href="../ChangeImg/ChangeImg1.0.css" rel="stylesheet" />
+    <script src="../ChangeImg/ChangeImg1.0.js"></script>
+</head>
+<body>
+    <br />
+    <br />
+
+    <div class="changeImg">
+        <div data-options="{
+             imgurl:'../Images/1.jpg',
+             link:'http://www.baidu.com',
+             title:'图片Two'
+             }"></div>
+        <div data-options="{
+             imgurl:'../Images/2.jpg',
+             link:'http://www.baidu.com',
+             title:'图片Two'
+             }"></div>
+        <div data-options="{
+             imgurl:'../Images/3.jpg',
+             link:'http://www.baidu.com',
+             title:'图片Two'
+             }"></div>
+        <div data-options="{
+             imgurl:'../Images/4.jpg',
+             link:'http://www.baidu.com',
+             title:'图片Two'
+             }"></div>
+    </div>
+
+
+
+
+    <script type="text/javascript">
+        var changeImg = $('.changeImg').changeImg({
+            width: 1004,//宽度
+            height: 285,//高度
+            showWidth: 817,//显示区宽度
+            showHeight: 285,//显示区高度
+            hideWidth: 175,//隐藏区宽度
+            hideHeight: 60,//隐藏区高度
+        });
+    </script>
+
+
+
+    <!--<div class="changeImg">
+        <div class="changeLeft">
+            <a href="#">
+                <img src="../Images/1.jpg" />
+            </a>
+        </div>
+        <div class="changeRight">
+            <div class="changeItem">
+                <div class="changeBack changeBack-hot">
+                    <img src="../Images/1.jpg" />
+                </div>
+                
+                <div class="changeUp">
+                    <div class="arrowLeft"></div>
+                </div>
+            </div>
+            <div class="changeItem">
+                <div class="changeBack">
+                    <img src="../Images/2.jpg" />
+                </div>
+            </div>
+            <div class="changeItem">
+                <div class="changeBack">
+                    <img src="../Images/2.jpg" />
+                </div>
+            </div>
+        </div>
+    </div>-->
+
+
+  <!--<img src="../Images/1.jpg" />-->
+</body>
+</html>

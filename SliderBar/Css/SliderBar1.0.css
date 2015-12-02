@@ -1,0 +1,67 @@
+﻿/****************** 图片横向滚动控件 1.0 样式 *********************/
+.sliderBar {
+    border: 1px solid blue;
+    margin: auto;
+    position: relative;
+}
+
+    .sliderBar .sliderContainer {
+        border: 0px solid red;
+        margin: auto;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .sliderBar ul, .sliderBar li {
+        display: block;
+        float: left;
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+    }
+
+    .sliderBar .slider {
+        position: relative;
+    }
+
+        .sliderBar .slider ul, .sliderBar .slider li img {
+            width: 100%;
+            height: 100%;
+        }
+
+    .sliderBar .btn {
+        width: 40px;
+        height: 40px;
+        border: 1px solid red;
+        position: absolute;
+        cursor: pointer;
+    }
+
+    .sliderBar .leftBtn {
+    }
+
+    .sliderBar .rightBtn {
+    }
+
+    .sliderBar .num {
+        border: 0px solid green;
+        position: relative;
+    }
+
+        .sliderBar .num li {
+            width: 17px;
+            height: 17px;
+            line-height: 16px;
+            color: white;
+            margin: 0px 3px;
+            background-color: gray;
+            font-size: 12px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .sliderBar .num .hot {
+            font-size: 13px;
+            color: red;
+        }

@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <script src="../Js/jquery-1.8.2.js"></script>
+    <link href="../Css/CommonCss1.0.css" rel="stylesheet" />
+    <script type="text/javascript">
+
+        $(function () {
+
+            //注册事件----可取消事件
+            //$(':button:first').click(function () {
+            //    clickOne(this);
+            //});
+
+
+            //可取消事件
+            //$(':button:first').on('click', function () {
+            //    clickOne(this);
+            //});
+
+
+            var divOne = getDivByClass('divOne btn');
+            
+            $(document.body).append(divOne);
+
+        });
+
+
+        function getDivByClass(cls) {
+            var div = $('<div />');
+            div.addClass(cls);
+
+            return div;
+        }
+
+        function clickOne(btn) {
+            var thisBrn = $(btn);
+
+            alert(3);
+            thisBrn.off('click');
+            //thisBrn.unbind('click');
+        }
+    </script>
+</head>
+<body>
+
+    <!--这种注册的点击事件，不能通过jquery移除-->
+    <input  type="button" value="确定" onclick="clickOne(this);"/>
+
+
+    <!--<input  type="button" value="确定"/>-->
+</body>
+</html>

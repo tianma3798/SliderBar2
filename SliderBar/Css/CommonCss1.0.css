@@ -1,0 +1,44 @@
+﻿
+body, html {
+    margin: 0px;
+    padding: 0px;
+}
+
+p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.editable {
+    width: 300px;
+    min-height: 200px;
+    border: 1px solid red;
+    margin: 30px;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+
+.divOne {
+    width: 200px;
+    height: 200px;
+    border: 1px solid blue;
+
+}
+
+.divFixed {
+    width: 100px;
+    height: 100px;
+    font-size: 15px;
+    text-align: center;
+    border: 2px solid red;
+    position: fixed;
+}
+
+.divTwo {
+    width:200px;
+    height:200px;
+    margin:50px;
+    border:1px solid red;
+    overflow:auto;
+}

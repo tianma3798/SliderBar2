@@ -1,0 +1,132 @@
+﻿/****************** 图片横向滚动控件 2.0 样式 *********************/
+.sliderBar {
+    border: 1px solid blue;
+    margin: auto;
+    position: relative;
+}
+
+    .sliderBar .sliderContainer {
+        border: 2px solid red;
+        margin: auto;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .sliderBar ul, .sliderBar li {
+        display: block;
+        float: left;
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+    }
+
+    .sliderBar .slider {
+        position: relative;
+    }
+
+        .sliderBar .slider ul, .sliderBar .slider li img {
+            width: 100%;
+            height: 100%;
+        }
+
+    /**左右切换按钮***/
+    .sliderBar .btn {
+        width: 30px;
+        height: 40px;
+        border: 1px solid black;
+        position: absolute;
+        cursor: pointer;
+    }
+
+        .sliderBar .btn .backDiv {
+            background-color: black;
+            opacity: 0.7;
+            filter: alpha(opacity=70);
+            width: 100%;
+            height: 100%;
+        }
+
+.backDiv-hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+.sliderBar .leftBtn .imgDiv {
+    background: url(../img/arrow.png) no-repeat -20px 0px;
+    width: 20px;
+    height: 25px;
+    border: 0px solid blue;
+    position: absolute;
+    top: 8px;
+    left: 5px;
+}
+
+.sliderBar .rightBtn .imgDiv {
+    background: url(../img/arrow.png) no-repeat 0px 0px;
+    width: 20px;
+    height: 25px;
+    border: 0px solid blue;
+    position: absolute;
+    top: 8px;
+    right: 4px;
+}
+
+.sliderBar .num {
+    border: 0px solid green;
+    position: absolute;
+}
+
+    /*方块数字*/
+    .sliderBar .number li {
+        width: 17px;
+        height: 17px;
+        line-height: 17px;
+        color: white;
+        margin: 0px 3px;
+        background-color: gray;
+        font-size: 12px;
+        text-align: center;
+        cursor: pointer;
+        display: block;
+    }
+
+    .sliderBar .number .hot {
+        font-weight: bold;
+        color: red;
+    }
+
+
+/*circle*/
+.sliderBar .circle {
+    background-color: rgba(255,255,255,0.3);
+    padding: 1px 1px;
+    border-radius: 10px;
+}
+
+    .sliderBar .circle li {
+        display: block;
+        padding-top: 9px;
+        width: 9px;
+        height: 0;
+        border-radius: 50%;
+        background-color: #B7B7B7;
+        overflow: hidden;
+        margin: 0px 2px;
+        cursor: pointer;
+    }
+
+    .sliderBar .circle .hot {
+        background-color: #F40;
+    }
+
+.sliderBar .shotItem {
+    position: absolute;
+    float: left;
+    top: 0px;
+    left: 0px;
+}
+
+.sliderBar .hideItem {
+    display: none;
+}

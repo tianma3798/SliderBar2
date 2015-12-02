@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link href="../Js/SliderBar3.0/Css/SliderBar3.0.css" rel="stylesheet" />
+    <script src="../Js/jquery-1.8.2.js"></script>
+    <script src="../Js/Common2.0.js"></script>
+    <script src="../Js/SliderBar3.0/SliderBar3.0.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            $('#sliderTwo').sliderBar({
+                containerWidth: 500,
+                containerHeight: 200,
+                itemWidth: 500,
+                itemHeight: 200,
+                displayCount: 1,
+                showBtn: true,
+                loopRun: false,//禁用循环播放
+                autoRun: false,
+                markingType: 'circle',
+                runType: 'single',
+                autoRunTime: 3000
+            });
+
+            $('#sliderThree').sliderBar({
+                containerWidth: 500,
+                containerHeight: 200,
+                itemWidth: 500,
+                itemHeight: 200,
+                showBtn: true,
+                loopRun: true,
+                autoRun: true,
+                markingType: 'circle',
+                runType: 'single',
+                autoRunTime: 3000,
+                showType: 'opacity', //使用渐变方式
+				runHandler:function(index){
+				alert(index);
+				}
+				
+				
+            });
+
+        });
+    </script>
+</head>
+<body>
+
+    <h3>单项滚动-----禁用循环播放 </h3>
+    <div id="sliderTwo" class="sliderBar" data-index="0">
+        <div class="sliderContainer">
+            <ul class="slider">
+                <li data-id="1.jpg">
+                    <img src="../Images/1.jpg" />
+                </li>
+                <li data-id="2.jpg">
+                    <img src="../Images/2.jpg" />
+                </li>
+                <li data-id="3.jpg">
+                    <img src="../Images/3.jpg" />
+                </li>
+                <li data-id="4.jpg">
+                    <img src="../Images/4.jpg" />
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <h3>单项滚动----- 渐变切换</h3>
+    <div id="sliderThree" class="sliderBar" data-index="0">
+        <div class="sliderContainer">
+            <ul class="slider">
+                <li data-id="1.jpg">
+                    <img src="../Images/1.jpg" />
+                </li>
+                <li data-id="2.jpg">
+                    <img src="../Images/2.jpg" />
+                </li>
+                <li data-id="3.jpg">
+                    <img src="../Images/3.jpg" />
+                </li>
+                <li data-id="4.jpg">
+                    <img src="../Images/4.jpg" />
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+</body>
+</html>
